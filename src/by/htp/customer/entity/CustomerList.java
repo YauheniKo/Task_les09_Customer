@@ -11,8 +11,9 @@ public class CustomerList {
 		customers = new ArrayList<Customer>();
 	}
 
-	public void add(Customer customer) {
+	public List<Customer> add(Customer customer) {
 		customers.add(customer);
+		return customers;
 	}
 
 	public List<Customer> getCustomersList() {
