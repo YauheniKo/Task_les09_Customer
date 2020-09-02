@@ -30,6 +30,9 @@ public class Main {
 		List<Customer> cardNum = logic.cardNum(customerList, 0, 30);
 		print.printCust(cardNum);
 		print.printCust(customerList.getCustomersList());
+		
+		Collections.sort(customerList.getCustomersList(),new CustSortAlf());
+		System.out.println(customerList);
 
 	}
 
